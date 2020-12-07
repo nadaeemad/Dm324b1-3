@@ -28,7 +28,7 @@ li a.active{
     background-color:  rgb(76, 175, 80);
     color:white;
 }
-div{
+div:not(.searchbar,#mytable){
     border:3px dotted;
     border-radius: 15px;
     box-shadow: -15px -10px 0px dimgray;
@@ -48,4 +48,25 @@ thead tr{
 }
 tbody tr:nth-child(odd){
     background-color: lightgrey;
+}
+
+.searchbar{
+    width:20%;
+    height: auto;
+    border:1px;
+    border-color:lightgrey;
+    border-style: solid;
+    padding: 0px 10px;
+    margin: 8px auto;
+    border-radius: 24px;
+    display:flexbox;
+}
+
+.searchbox{
+    width:80%;
+    padding:8px 8px;
+    border:none;
+    margin: 0 2px;
+    outline:none;
+     
 }
